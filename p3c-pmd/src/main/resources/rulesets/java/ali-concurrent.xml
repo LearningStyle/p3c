@@ -3,6 +3,7 @@
          xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 http://pmd.sourceforge.net/ruleset_2_0_0.xsd">
+    <description>AlibabaJavaConcurrent</description>
 
     <rule name="ThreadPoolCreationRule"
           language="java"
@@ -76,7 +77,7 @@ Positive example 3：
     <rule name="AvoidManuallyCreateThreadRule"
           language="java"
           since="1.6"
-          message="java.concurrent.AvoidConcurrentCompetitionRandomRule.rule.msg"
+          message="java.concurrent.AvoidManuallyCreateThreadRule.rule.msg"
           dfa="true"
           class="com.alibaba.p3c.pmd.lang.java.rule.concurrent.AvoidManuallyCreateThreadRule">
         <description>java.concurrent.AvoidManuallyCreateThreadRule.rule.desc</description>
